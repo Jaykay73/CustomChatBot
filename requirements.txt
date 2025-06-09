@@ -1,0 +1,5 @@
+#requirements.txt
+openai>=1.0.0
+streamlit
+python-dotenv
+
