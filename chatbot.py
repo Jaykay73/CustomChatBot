@@ -22,13 +22,13 @@ def generate_response(prompt, chat_history=None):
 
     headers = {
         "Authorization": f"Bearer {OPENROUTER_API_KEY}",
-        "HTTP-Referer": "https://yourportfolio.com",  # Required
+        "HTTP-Referer": "https://aledare-john-portfolio.vercel.app",  # Required
         "X-Title": "Custom GPT Chatbot",              # Optional
         "Content-Type": "application/json"
     }
 
     payload = {
-    "model": "mistralai/mistral-7b-instruct",  # ✅ Correct OpenRouter ID
+    "model": "google/gemini-pro-1.5",  # ✅ Correct OpenRouter ID
     "messages": messages,
     "temperature": 0.7,
     "max_tokens": 750
