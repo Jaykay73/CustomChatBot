@@ -21,13 +21,13 @@ def generate_response(prompt, chat_history=None):
 
     headers = {
         "Authorization": f"Bearer {OPENROUTER_API_KEY}",
-        "HTTP-Referer": "https://yourportfolio.com",  # Replace with your site
+        "HTTP-Referer": "https://aledare-john-portfolio.vercel.app/", 
         "X-Title": "Custom GPT Chatbot",
         "Content-Type": "application/json"
     }
 
     payload = {
-        "model": "google/gemini-pro-1.5",  # ✅ Switched to Gemini
+        "model": "google/gemini-pro-1.5",  #
         "messages": messages,
         "temperature": 0.7,
         "max_tokens": 750
